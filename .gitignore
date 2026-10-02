@@ -32,3 +32,13 @@ claude
 
 # folder .tokensave
 .tokensave/
+
+# Desktop GUI dependencies and generated output
+.tools/
+desktop/frontend/node_modules/
+desktop/frontend/dist/
+desktop/frontend/wailsjs/
+desktop/build/bin/
+
+# Frontend dependency-install checksum
+desktop/frontend/package.json.md5

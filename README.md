@@ -1,3 +1,27 @@
+# SERIAL
+
+A minimal desktop anime library and player for Apple Silicon macOS, built on [GoAnime](https://github.com/alvarorichard/GoAnime).
+
+SERIAL 0.5.3 includes search and episode names, Explore recommendations shaped by local likes/dislikes, MyAnimeList tags and trailers, subtitles, resume history, downloads, and optional MetalFX 2× upscaling. The video window includes pause/resume, ten-second rewind/forward, seeking, 0.5×–2× speed, volume/mute, and fullscreen.
+
+## Build the desktop app
+
+Requires Apple Silicon macOS 14 or later, Go 1.27.1 or newer, Node.js/npm, and the Xcode command-line tools.
+
+```sh
+git clone https://github.com/DragonLord1998/SERIAL.git
+cd SERIAL
+./desktop/scripts/build-macos.sh
+```
+
+Open `desktop/build/bin/SERIAL.app`. The build packages mpv and the native MetalFX player. This is a local development build; it has not been notarized or published as a downloadable release.
+
+See [desktop setup, features, and verification](desktop/README.md) and [third-party notices](desktop/THIRD_PARTY.md). Preferences and watch history remain on your Mac and are excluded from this repository.
+
+The original MIT license, GoAnime contributors' attribution, provider implementation, and terminal app are retained below.
+
+---
+
 <h4 align="center">
     <p>
         <b>English</b> |
@@ -205,3 +229,7 @@ Quick start:
 6.  Open a pull request to the `dev` branch.
 
 All changes must go through the `dev` branch first.
+
+## SERIAL Desktop GUI
+
+SERIAL, a local Wails + React desktop GUI, is available in `desktop/`. It adds source-aware search, real episode names, MyAnimeList tags and community recommendations shaped by local likes/dislikes, muted visible trailer autoplay and image click-to-pause/resume and double-click-to-restart, optional MetalFX upscaling with visible player controls for pause, seeking, speed, and volume, saved anime, durable resume history, and a cancellable download queue. See [desktop setup and verification](desktop/README.md).
